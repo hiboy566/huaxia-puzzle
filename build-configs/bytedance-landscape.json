@@ -1,0 +1,10 @@
+{
+  "platform": "bytedance-mini-game",
+  "taskName": "bytedance-mini-game",
+  "outputName": "bytedance-mini-game",
+  "packages": {
+    "bytedance-mini-game": {
+      "orientation": "landscape"
+    }
+  }
+}

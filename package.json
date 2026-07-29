@@ -1,0 +1,9 @@
+{
+  "name": "huaxia-puzzle",
+  "version": "1.0.0",
+  "description": "面向微信小游戏与抖音小游戏的中国特色休闲拼图",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "uuid": "2cd0d1c8-5fa5-4ff6-aacf-174a1ae0dc2f"
+}

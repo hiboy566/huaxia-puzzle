@@ -1,0 +1,10 @@
+{
+  "platform": "wechatgame",
+  "taskName": "wechatgame",
+  "outputName": "wechatgame",
+  "packages": {
+    "wechatgame": {
+      "orientation": "landscape"
+    }
+  }
+}
