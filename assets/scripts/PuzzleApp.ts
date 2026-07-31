@@ -202,7 +202,7 @@ export class PuzzleApp extends Component {
         const contentWidth = contentRight - contentLeft;
         this.drawRect(this.appRoot, this.layoutWidth, 600, COLORS.paper);
 
-        this.makeLabel(this.appRoot, '华夏拼图', 38, COLORS.ink, new Vec3(contentLeft + 120, 246 - this.safeTop), 240, 'left', true);
+        this.makeLabel(this.appRoot, '巧拼雅集', 38, COLORS.ink, new Vec3(contentLeft + 120, 246 - this.safeTop), 240, 'left', true);
         this.makeLabel(this.appRoot, '每日一幅中国之美', 18, COLORS.muted, new Vec3(contentLeft + 168, 208 - this.safeTop), 336, 'left');
         this.makePill(this.appRoot, `运行于 ${this.platformName()}`, new Vec3(contentRight - 300, 242 - this.safeTop), COLORS.blue);
         this.makeButton(this.appRoot, this.isTodayStamped() ? '今日 ✓' : '每日拼图', new Vec3(contentRight - 112, 242 - this.safeTop), 150, 46, COLORS.vermilion, () => this.showDaily());
@@ -435,7 +435,7 @@ export class PuzzleApp extends Component {
         this.makeLabel(sideBar, '待拼区', 18, new Color(235, 239, 255), new Vec3(0, 268 - this.safeTop), sideBarWidth - 20, 'center', true);
 
         this.makeButton(this.appRoot, '☰', new Vec3(contentLeft + 48, 250 - this.safeTop), 86, 76, new Color(42, 53, 145), () => this.showGameMenu());
-        this.makeLabel(this.appRoot, puzzle.title, 24, new Color(232, 237, 255), new Vec3(contentLeft + 176, 260 - this.safeTop), 220, 'left', true);
+        this.makeLabel(this.appRoot, `巧拼雅集 · ${puzzle.title}`, 22, new Color(232, 237, 255), new Vec3(contentLeft + 245, 260 - this.safeTop), 350, 'left', true);
         this.statusLabel = this.makeLabel(this.appRoot, '', 16, new Color(205, 213, 255), new Vec3(gameRight - 104, 260 - this.safeTop), 190, 'right');
         this.makeLabel(this.appRoot, '拖动右侧拼片到中央棋盘', 14, new Color(180, 192, 244), new Vec3(this.boardCenterX, -278 + this.safeBottom), 420, 'center');
         resources.load(puzzle.path, SpriteFrame, (error, frame) => {
